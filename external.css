@@ -1,0 +1,137 @@
+/*
+colour schem for the site.
+https://www.schemecolor.com/bright-german-color-palette.php*/
+body{
+	background-color: white !important;
+}
+.foot col-sm-12{
+	background-color: #FFB87E ; /*Black footer */
+}
+.foot{
+	background-color: #FFB87E; /* Black*/
+	color:#fff3dc; /* Text colour to cream */
+	font-family: "Lucida Console", "Courier New", monospace; /*Footer font */
+}
+.foot col-sm-3{
+	background-color: #FFB87E; /*Black footer */
+}
+.foot h2{ /* Footer headers*/
+	color:#fff3dc; 
+	background-color: #FFB87E;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 25px;
+	text-align: left; /*Set text to the left of the column */
+}
+.foot p{ /* Footer text*/
+	color:#fff3dc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align: left;
+}
+.sitemap{ /* Sitemap */
+	color:#fff3dc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align: left;
+}
+.navbar{ /* Navbar background styling */
+	background-color: #FFB87E; /* Colour set to black*/
+	list-style-type: none; /* No styling for the list*/
+  margin: 0; /* 0 margin or padding */
+  padding: 0;	
+}
+ul{ /* Navbar list element styling */
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+	overflow: hidden; 
+}
+.topbot a{ /* The nav bar*/
+
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	display:block; /* blocked display */
+	color: white; /* Blood orange text */
+	text-align: center; /* Text to the center */
+	padding: 1% 2%; /* Padding x and y coordinates for the nav bar*/
+	text-decoration: none; /* Removes the underline from the link*/
+	font-size:20px;
+}
+.topbot a:focus{ /* Styling for when the mouse clicks over the link*/
+  background-color: #FFD377;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFD377;
+  text-decoration: none;
+}
+.topbot a:hover{ /* Styling for when the mouse hovers over the link*/
+  background-color: #FFD377;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFD377;
+  text-decoration: none;
+}
+.navActive{ /* Styling for when the current page. The colour of the lin changes from black to cream*/
+  background-color: #FFB87E;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.main{ /* Div in place to push the non nav bar content below the nav.
+	Because with the fixed nav bar, the top of the content gets hidden behind the nav. This stops that by adding a margin*/
+	margin-top:35%;
+}
+/* @media is in place to allow the main content not get hidden with the resizing of the web page.
+It is responsive.*/
+@media (max-width: 1200px) {
+	.main{
+		margin-top:35%;
+	}
+}
+@media (max-width: 494px) {
+	.main{
+		margin-top:42%;
+	}
+}
+/*Start of Svg stylings*/
+.andHere{
+	position: relative;
+	height: 50%;
+	width: 100%;
+}
+.wtj h2{
+	position: absolute;
+	left: 15%;
+	top: 25%;
+
+}
+.wtj p{
+	position: absolute;
+	left: 5%;
+	top: 35%;
+}
+.imimg{
+	position: absolute;
+	left: 60%;
+	top: 25%;
+	height: 75%;
+	width: 25%;
+	z-index: 1;
+}
+.formHome{
+	float: right;
+	position: absolute;
+	top: 50%;
+	margin-top: 30%;
+	margin-left: 60%;
+	height: 50%;
+	width: 35%;
+	z-index: 1;
+}
+form p{
+	text-align: center;
+}
+.doIt{
+	width: 400px;
+	margin: 4%;
+	color: green;
+}
+
+
