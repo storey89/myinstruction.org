@@ -4,8 +4,7 @@
 	$message=$_POST['message'];
 	$email_form='info@myinstruction.org';
 	$email_subject="New form submission";
-	$email_body="You have recieved a new message from the user $name. \n
-	Here is the message: \n $message";
+	$email_body="You have recieved a new message from the user $name. \n Here is the message: \n $message";
 
   $to='info@myinstruction.org';
   $headers='From: $email_from \r\n';
