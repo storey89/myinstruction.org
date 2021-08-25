@@ -8,8 +8,9 @@
 
   $to='info@myinstruction.org';
   $headers='From: $email_from \r\n';
-  $headers='Reply-To: $visitor_email \r\n';
+  $headers .='Reply-To: $visitor_email \r\n';
   mail($to,$email_subject,$email_body,$headers);
+?>
 
 
 	/*function IsInjected($str)
@@ -41,6 +42,5 @@
 	    echo "Bad email value!";
 	    exit;
 	}*/
-?>
 
 
