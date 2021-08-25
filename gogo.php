@@ -11,7 +11,7 @@
   $headers="From: $email_from \r\n";
   $headers="Reply-To: $visitor_email \r\n";
   mail($to,$email_subject,$email_body,$headers);
-	function IsInjected($str)
+	/*function IsInjected($str)
 	{
 	    $injections = array('(\n+)',
 	           '(\r+)',
@@ -39,7 +39,7 @@
 	{
 	    echo "Bad email value!";
 	    exit;
-	}
+	}*/
 ?>
 
 
