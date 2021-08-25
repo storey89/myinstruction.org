@@ -1,15 +1,23 @@
 <?php
-	$name=$_POST['name'];
-	$visitor_email=$_POST['email'];
-	$message=$_POST['message'];
-	$email_form='info@myinstruction.org';
-	$email_subject="New form submission";
-	$email_body="You have recieved a new message from the user $name. \n Here is the message: \n $message";
+	$errors = '';
+	$myemail = 'yourname@website.com';//<-----Put Your email address here.
+		if(empty($_POST['name'])  || 
+   			empty($_POST['email']) || 
+   			empty($_POST['message']))
+			{
+    			$errors .= "\n Error: all fields are required";
+			}
 
-  $to='info@myinstruction.org';
-  $headers='From: $email_from \r\n';
-  $headers .='Reply-To: $visitor_email \r\n';
-  mail($to,$email_subject,$email_body,$headers);
+			$name = $_POST['name']; 
+			$email_address = $_POST['email']; 
+			$message = $_POST['message']; 
+
+			if (!preg_match(
+			"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+			$email_address))
+			{
+			    $errors .= "\n Error: Invalid email address";
+			}
 ?>
 
 
